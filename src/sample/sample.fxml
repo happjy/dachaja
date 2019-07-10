@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="txt_Search" layoutX="14.0" layoutY="14.0" prefHeight="24.0" prefWidth="238.0" promptText="검색어를 입력하세요." />
+      <ListView fx:id="list_PhoneNum" layoutX="453.0" layoutY="65.0" prefHeight="376.0" prefWidth="128.0" />
+      <ListView fx:id="list_Location" layoutX="187.0" layoutY="65.0" prefHeight="376.0" prefWidth="266.0" />
+      <Button fx:id="btn_Search" layoutX="272.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleSearchAction" text="검색">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Label layoutX="78.0" layoutY="48.0" prefHeight="18.0" prefWidth="34.0" text="이름" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="48.0" text="위치">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="list_Name" layoutY="65.0" onMouseClicked="#handleNameClick" prefHeight="376.0" prefWidth="190.0" />
+      <CheckBox fx:id="chb1" layoutX="26.0" layoutY="462.0" mnemonicParsing="false" text="떡볶이" />
+      <CheckBox fx:id="chb2" layoutX="95.0" layoutY="462.0" mnemonicParsing="false" text="닭발" />
+      <CheckBox fx:id="chb3" layoutX="150.0" layoutY="462.0" mnemonicParsing="false" text="피자" />
+      <CheckBox fx:id="chb4" layoutX="204.0" layoutY="462.0" mnemonicParsing="false" text="탕수육" />
+      <CheckBox fx:id="chb5" layoutX="272.0" layoutY="462.0" mnemonicParsing="false" text="짬뽕" />
+      <CheckBox fx:id="chb6" layoutX="330.0" layoutY="462.0" mnemonicParsing="false" text="짜장면" />
+      <CheckBox fx:id="chb7" layoutX="392.0" layoutY="462.0" mnemonicParsing="false" text="치킨" />
+      <Button fx:id="RandomSelection" layoutX="450.0" layoutY="458.0" mnemonicParsing="false" onAction="#handleSelectAction" text="골라줘!" />
+      <Label fx:id="randomResult" layoutX="512.0" layoutY="461.0" prefHeight="18.0" prefWidth="66.0" text="??????????????" textFill="#000dff">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00ff1a" />
+         </effect>
+      </Label>
+      <WebView fx:id="wv_Search" layoutX="581.0" prefHeight="677.0" prefWidth="392.0" />
+      <Label layoutX="487.0" layoutY="48.0" text="전화번호">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chb8" layoutX="26.0" layoutY="497.0" mnemonicParsing="false" text="김밥" />
+      <CheckBox fx:id="chb9" layoutX="95.0" layoutY="497.0" mnemonicParsing="false" text="라면" />
+      <CheckBox fx:id="chb10" layoutX="150.0" layoutY="497.0" mnemonicParsing="false" text="냉면" />
+      <CheckBox fx:id="chb11" layoutX="204.0" layoutY="497.0" mnemonicParsing="false" text="파스타" />
+      <CheckBox fx:id="chb12" layoutX="273.0" layoutY="497.0" mnemonicParsing="false" text="쌀국수" />
+      <CheckBox fx:id="chb13" layoutX="331.0" layoutY="497.0" mnemonicParsing="false" text="볶음밥" />
+      <CheckBox fx:id="chb14" layoutX="392.0" layoutY="497.0" mnemonicParsing="false" text="삼겹살" />
+   </children>
+</Pane>
